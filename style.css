@@ -152,8 +152,8 @@
     display: none;
 }
 .sign_up_background{
-    width: 199.5vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%; 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -410,8 +410,423 @@
 .sign_up_form .submit_input:hover{
     background: linear-gradient(#79bc64, #578843);
 }
+/*  very Small */
+@media only screen and (min-width: 320px) and (max-width:480px)  {
+    .landing{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        background-color: #edf0f5;
+    }
+    /* left_landing */
+    .left_landing{
+        margin-top: -80px;
+        margin-left: 0px;
+        margin-right: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .left_landing img{
+        /* border: 1px solid red; */
+        align-items: center;
+        width: 270px;
+        height: 106px;
+        margin-left: 160px;
+    }
+    .left_landing p{
+        /* border: 1px solid red; */
+        margin-left: 140px;
+        letter-spacing: 1px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        align-items: center;
+        text-align: center;
+        width: 310px;
+    }
+    /* right_landing */
+    .right_landing{
+        margin-top: -180px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        height: 43vh;
+        width: 260px;
+        background-color: white;
+    }
+    .right_landing input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0px 2px gray;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        height: 23px;
+        width: 280px;
+    }
+    .right_landing input:focus{
+        box-shadow: 0px 0px 5px #1877f2;
+        border: none;
+        outline: #1877f2;
+    }
+    .right_landing input::placeholder{
+        color: gray;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 15px;
+    }
+    .right_landing .log_in_input{
+        box-shadow: 0 0px 2px gray;
+        border: none;
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 42px;
+        width: 300px;
+        background-color: #1877f2;
+        color: white;
+        align-items: center;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        line-height: 1.3;
+        font-weight: 600;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .right_landing .log_in_input:hover{
+        background-color: #4267b2;
+    }
+    .right_landing .forget{
+        margin: 10px 0px;
+        color: #1877f2;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        line-height: 0.9;
+        font-weight: 600;
+        word-spacing: 0.5px;
+    }
+    .right_landing .forget:hover{
+        text-decoration: underline;
+        color: #4267b2;
+    }
+    .right_landing hr{
+        margin: 20px 10px;
+        border: none;
+        border-top: 1px solid rgb(188, 188, 188);
+    }
+    .right_landing button{
+        box-shadow: 0 0px 2px gray;
+        border: none;
+        padding: 10px;
+        margin-bottom: 60px;
+        height: 50px;
+        width: 200px;
+        background-color: #42b72a;
+        color: #fff;
+        align-items: center;
+        font-size: 0.8rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        line-height: 1.3;
+        font-weight: 600;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .right_landing button:hover{
+        background-color: #30921c;
+    }
+    .right_landing h6{
+        font-size: 0.6rem;
+        text-decoration: none;
+    }
+    .right_landing .Create_a_Page{
+        font-size: 0.7rem;
+        color: black;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    /* sign_up page */
+    .sign_up_page{
+        display: none;
+    }
+    .sign_up_background{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, .8); 
+    }
+    .sign_up{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 295px;
+        height: 90vh;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0,.5);
+    }
+    .sign_up .header h1{
+        font-size: 1.4rem;
+        text-align: start;
+        display: inline-block;
+        margin-right: 182px;
+    }
+    .sign_up .fa-x{
+        font-size: 1rem;
+        text-align: end;
+        cursor: pointer;
+        color: gray;
+        font-weight: 900;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .sign_up .header p{
+        font-size: 0.9rem;
+        text-align: start;
+        margin: 5px 0 0px 0;
+        width: 150px;
+        color: rgb(107, 107, 107);
+    }
+    .sign_up .header hr{
+        margin: 20px 0px 20px -15px;
+        width: 107%;
+        border: none;
+        border-top: 1px solid rgb(188, 188, 188);
+    }
+    /* sign_up_form */
+    .sign_up_form{
+        position: relative;
+        display: flex;  
+        flex-direction: row;
+        align-items: center;  
+    }
+    #error{
+        color: red;
+        margin-top: -10px;
+        margin-bottom: 8px;
+    }
+    #passwordError{
+        color: red;
+        margin-top: -15px;
+        margin-bottom: 8px;
+    }
+    .sign_up_form .first_name{
+        position: relative;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 115px;
+        height: 15px;
+        border: none; 
+        border-radius: 4px;
+        box-shadow: 0 0 2px gray;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        padding: 11px;
+        background: #f5f6f7;
+    }
+    .sign_up_form .exclamation_first_name{
+        position: absolute;
+        display: none;
+        top: 27px;
+        bottom: 0;
+        left: 118px;
+        right: 0;
+        color: red;
+        outline: none;
+    }
+    .sign_up_form input:focus{
+        outline: none;
+    }
+    .sign_up_form .last_name{
+        position: relative;
+        margin-bottom: 10px;
+        width: 115px;
+        height: 15px;
+        border: none; 
+        border-radius: 4px;
+        box-shadow: 0 0 2px gray;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+        padding: 11px;
+        background: #f5f6f7;
+    }
+    .sign_up_form .exclamation_last_name{
+        position: absolute;
+        display: none;
+        top: 27px;
+        bottom: 0;
+        left: 270px;
+        right: 0px;
+        color: red;
+        outline: none;
+    }
+    .sign_up_form .email{
+        position: relative;
+        margin-bottom: 10px;
+        width: 270px;
+        height: 15px;
+        border: none; 
+        border-radius: 4px;
+        box-shadow: 0 0 2px gray;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        padding: 11px;
+        background: #f5f6f7;
+    }
+    .sign_up_form .exclamation_email{
+        display: none;
+        position: absolute;
+        top: 77px;
+        bottom: 0;
+        left: 280px;
+        right: 0px;
+        color: red;
+        outline: none;
+    }
+    .sign_up_form .newPassword{
+        position: relative;
+        margin-bottom: 20px;
+        width: 270px;
+        height: 17px;
+        border: none; 
+        border-radius: 4px;
+        box-shadow: 0 0 2px gray;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+        padding: 11px;
+        background: #f5f6f7;
+    }
+    .sign_up_form .date_of_birth_label{
+        margin-bottom: 5px;
+        display: block;
+        width: 120px;
+        height: 20px;
+        color: #90949c;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+    .sign_up_form select{
+        margin-right: 5px;
+        margin-bottom: 15px;
+        width: 90px;
+        height: 30px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        border-color: #90949c;
+        border-radius: 4px;
+        outline: none;
+    }
+    .sign_up_form option{
+        margin-bottom: 10px;
+        width: 80px;
+        height: 10px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        border-color: #90949c;
+        border-radius: 0px;
+        outline: none;
+    }
+    .sign_up_form .gender_label{
+        margin-bottom: 5px;
+        display: block;
+        width: 150px;
+        height: 20px;
+        color: #90949c;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+    .sign_up_form .gender_choose{
+        width: 100%;
+        height: 25px;
+        margin-bottom: 25px;
+    }
+    .sign_up_form .gender{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+        padding: 10px;
+        width: 72px;
+        height: 15px;
+        border: 1px solid rgb(190, 187, 187);
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 15px;
+    }
+    .sign_up_form .gender label{
+        display: inline-block;
+        margin-right: 0px;
+        width: 55px;
+        height: 18px;
+    }
+    .sign_up_form h6{
+        font-size: 0.7rem;
+        font-weight: 500;
+        line-height: 15px;
+        color: #6e6f71;
+        margin-bottom: 8px;
+    }
+    .sign_up_form h6 a{
+        text-decoration: none;
+        color: #06479c;
+    }
+    .sign_up_form h6 a:hover{
+        text-decoration: underline;
+    }
+    .sign_up_form .submit_input{
+        box-shadow: 0 0px 2px gray;
+        border: none;
+        padding: 10px;
+        margin-top: 10px;
+        height: 30px;
+        width: 170px;
+        margin-left: 70px;
+        background-color: #30921c;
+        color: #fff;
+        align-items: center;
+        font-size: 0.9rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        line-height: 0.7;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        word-spacing: 1px;
+    }
+    .sign_up_form .submit_input:hover{
+        background: linear-gradient(#79bc64, #578843);
+    }
+}
 /*  Small */
-@media only screen and (min-width: 476px) and (max-width:755px)  {
+@media only screen and (min-width: 480px) and (max-width:768px)  {
     .landing{
         position: relative;
         display: flex;
@@ -525,7 +940,7 @@
         color: #4267b2;
     }
     .right_landing hr{
-        margin: 20px 10px;
+        margin: 25px 10px;
         border: none;
         border-top: 1px solid rgb(188, 188, 188);
     }
@@ -533,7 +948,8 @@
         box-shadow: 0 0px 2px gray;
         border: none;
         padding: 10px;
-        margin-bottom: 60px;
+        margin-top: 8px;
+        margin-bottom: 95px;
         height: 50px;
         width: 200px;
         background-color: #42b72a;
@@ -566,8 +982,8 @@
         display: none;
     }
     .sign_up_background{
-        width: 80vh;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -576,7 +992,7 @@
     }
     .sign_up{
         position: absolute;
-        top: 59%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
@@ -826,7 +1242,7 @@
     }
 }
 /*  medium */
-@media only screen and (min-width: 755px) and (max-width: 900px) {
+@media only screen and (min-width: 768px ) and (max-width: 992px ) {
     /* landing */
 .landing{
     position: relative;
@@ -840,7 +1256,7 @@
 .left_landing{
     margin-top: -150px;
     margin-left: 380px;
-    margin-right: 40px;
+    margin-right: 35px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -848,7 +1264,7 @@
 }
 .left_landing img{
     align-items: start;
-    width: 280px;
+    width: 300px;
     height: 106px;
 }
 .left_landing p{
@@ -871,7 +1287,7 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-    height: 38vh;
+    height: 39vh;
     width: 306px;
     background-color: white;
 }
@@ -938,7 +1354,7 @@
     color: #4267b2;
 }
 .right_landing hr{
-    margin: 18px 10px;
+    margin: 40px 10px;
     border: none;
     border-top: 1px solid rgb(188, 188, 188);
 }
@@ -965,12 +1381,12 @@
     background-color: #30921c;
 }
 .right_landing h6{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-decoration: none;
 }
 .right_landing .Create_a_Page{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: black;
     font-weight: 600;
     text-decoration: none;
@@ -1240,7 +1656,7 @@
 }
 }
 /* Large */
-@media only screen and (min-width: 900px) and (max-width: 1491px) {
+@media only screen and (min-width: 992px ) and (max-width: 1200px) {
      /* landing */
 /* landing */
 .landing{
@@ -1285,7 +1701,7 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-    height: 50vh;
+    height: 45vh;
     width: 396px;
     background-color: white;
 }
@@ -1350,7 +1766,7 @@
     color: #4267b2;
 }
 .right_landing hr{
-    margin: 20px 10px;
+    margin: 40px 10px;
     border: none;
     border-top: 1px solid rgb(188, 188, 188);
 }
@@ -1358,7 +1774,7 @@
     box-shadow: 0 0px 2px gray;
     border: none;
     padding: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     height: 55px;
     width: 220px;
     background-color: #42b72a;
@@ -1391,8 +1807,8 @@
     display: none;
 }
 .sign_up_background{
-    width: 199.5vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1406,7 +1822,7 @@
     transform: translate(-50%, -50%);
     background-color: white;
     width: 450px;
-    height: 80vh;
+    height: 70vh;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0,.5);
